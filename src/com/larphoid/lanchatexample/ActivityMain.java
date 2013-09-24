@@ -677,7 +677,7 @@ public class ActivityMain extends Activity implements OnItemClickListener, Clien
 	}
 
 	private void endChat() {
-		lanUdpComm.sendClientBye();
+		lanUdpComm.sendClientByeBye();
 		chatclient = null;
 		chatWindow.setBackgroundResource(R.drawable.bg_messages_inactive);
 		chatmessageAdapter.notifyDataSetChanged();
